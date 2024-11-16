@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: RGB(0, 0, 0, 0.795);
+    background-color: rgba(0, 0, 0, 0.795);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,13 +17,15 @@ body{
 }
 
 .container{
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
     position: relative;
     overflow: hidden;
-    width: 1000px;
+    width: 1200px;
+    height:900px;
     max-width: 100%;
+    max-height: 90%;
 }
 
 .container p{
@@ -45,8 +47,8 @@ body{
 }
 
 .container button{
-    background-color: rgb(255, 13, 13);
-    color: #fff;
+    background-color: rgb(0, 204, 250);
+    color: #ffffff;
     font-size: 12px;
     padding: 10px 45px;
     border: 1px solid transparent;
@@ -56,6 +58,11 @@ body{
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container button:hover{
+    background-color: rgb(9, 101, 192);
 }
 
 .container button.hidden{
@@ -63,8 +70,12 @@ body{
     border-color: #fff;
 }
 
+.container button.hidden:hover{
+    background-color: rgb(9, 101, 192);
+}
+
 .container form{
-    background-color: #fff;
+    background-color: #08ec7e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,21 +137,37 @@ body{
     }
 }
 
-.social-icons{
-    margin: 20px 0;
+.social-icons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    margin: 20px 0; 
 }
 
-.social-icons a{
-    border: 1px solid #ccc;
-    border-radius: 20%;
+.social-icons a {
+    border: 3px solid #000000;
+    border-radius: 50%; 
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0 3px;
     width: 40px;
     height: 40px;
+    font-size: 1.5rem; 
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; 
 }
 
+.social-icons a:hover {
+    background-color: rgb(3, 56, 8); 
+    color: #fff; 
+}
+
+
+.google{
+    margin:auto;
+}
 .toggle-container{
     position: absolute;
     top: 0;
@@ -148,7 +175,7 @@ body{
     width: 50%;
     height: 100%;
     overflow: hidden;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
     border-radius: 20px;
     z-index: 1000;
 }
@@ -159,7 +186,7 @@ body{
 }
 
 .toggle{
-    background-color: rgba(255, 4, 4, 0.952);
+    background-color: rgb(0, 204, 250);
     height: 100%;
     color: #fff;
     position: relative;
@@ -167,7 +194,7 @@ body{
     height: 100%;
     width: 200%;
     transform: translateX(0);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .container.active .toggle{
@@ -186,7 +213,7 @@ body{
     text-align: center;
     top: 0;
     transform: translateX(0);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .toggle-left{
