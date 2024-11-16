@@ -1,66 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    
-    <! Import the icons for the apps-->
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        <!--https://boxicons.com/ -->
 
-    <title>Login & Register Page for GlobalHacks</title>
+    <title>Login & Register Page</title>
 </head>
 
 <body>
-    <! Sign up Form -->
+
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form>
                 <h1>Create Account</h1>
                 <div class="social-icons">
-                    <a href="#" class="icons"><i class='bx bxl-google'></i></a>
-                    <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="icons"><i class='bx bxl-github'></i></a>
-                    <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
+                    <div class = "google"><a href="#" class="icons"><i class='bx bxl-google'></i></a></div>
+                    <div class = "facebook"><a href="#" class="icons"><i class='bx bxl-facebook'></i></a></div>
+                    <div class = "github"><a href="#" class="icons"><i class='bx bxl-github'></i></a></div>
+                    <div class = "linkedin"><a href="#" class="icons"><i class='bx bxl-linkedin'></i></a></div>
                 </div>
                 <span>Register with E-mail</span>
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Enter Username">
                 <input type="email" placeholder="Enter E-mail">
                 <input type="password" placeholder="Enter Password">
                 <button>Sign Up</button>
             </form>
         </div>
 
-        <! Sign in Form -->
+
         <div class="form-container sign-in">
             <form>
                 <h1>Sign In</h1>
                 <div class="social-icons">
-                    <a href="#" class="icons"><i class='bx bxl-google'></i></a>
-                    <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="icons"><i class='bx bxl-github'></i></a>
-                    <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
+                    <div class = "google"><a href="#" class="icons"><i class='bx bxl-google'></i></a></div>
+                    <div class = "facebook"><a href="#" class="icons"><i class='bx bxl-facebook'></i></a></div>
+                    <div class = "github"><a href="#" class="icons"><i class='bx bxl-github'></i></a></div>
+                    <div class = "linkedin"><a href="#" class="icons"><i class='bx bxl-linkedin'></i></a></div>
                 </div>
                 <span>Login With Email & Password</span>
                 <input type="email" placeholder="Enter E-mail">
                 <input type="password" placeholder="Enter Password">
-                <a href="#">Forget Password?</a>
+                <a href="#">Forgot Password?</a>
                 <button>Sign In</button>
             </form>
         </div>
 
-        <! The Container that the User toggles -->
+
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back To <br><em>Global Hacks</em></h1>
-                    <p>Sign in With Email & Password</p>
+                    <h1>Welcome To <br><em>Amogh's Website</em></h1>
+                    <p>Sign in With Email and Password</p>
                     <button class="hidden" id="login">Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Greetings Coders</h1>
-                    <p>Join <em>"Global Hacks"</em> to Improve Your Coding Skills</p>
+                    <h1>Greetings to all Coders</h1>
+                    <p>Join this website to further develop your coding skills</p>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
