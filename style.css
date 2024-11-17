@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -16,8 +17,14 @@ body{
     height: 100vh;
 }
 
+h1{
+    font-size:60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .container{
-    background-color: #ffffff;
+    background-color: transparent;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
     position: relative;
@@ -29,14 +36,15 @@ body{
 }
 
 .container p{
-    font-size: 14px;
+    font-family: 'poppins', sans-serif;
+    font-size: 25px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
 .container span{
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .container a{
@@ -51,7 +59,8 @@ body{
     color: #ffffff;
     font-size: 12px;
     padding: 10px 45px;
-    border: 1px solid transparent;
+    border: 1px solid;
+    border-color: white;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -76,6 +85,7 @@ body{
 
 .container form{
     background-color: #08ec7e;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,9 +174,14 @@ body{
     color: #fff; 
 }
 
+.forgot-password{
+    color: #000; 
+    color: inherit;
+}
 
-.google{
-    margin:auto;
+.forgot-password:hover{
+    color:blue;
+    text-decoration: underline;
 }
 .toggle-container{
     position: absolute;
